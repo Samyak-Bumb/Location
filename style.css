@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	display: grid;
+	min-height: 100vh;
+	width: 100%;
+	place-items: center;
+	background-image: linear-gradient(12deg, rgba(100, 138, 224, 0.5196400735492335) 31%, rgba(252, 164, 196, 0.5) 47%),linear-gradient(104deg, rgba(72, 183, 196, 0.3710127004270327) 46%, rgba(249, 189, 191, 0.5) 176%),linear-gradient(100deg, rgba(49, 120, 206, 0.27090032147651577) 51%, rgba(255, 193, 204, 0.5) 3%),linear-gradient(1deg, rgba(45, 59, 150, 0.0309683357017998) 77%, rgba(255, 153, 147, 0.5) 50%); background-blend-mode: hard-light,multiply,lighten,lighten;
+}
+.main{
+	position: relative;
+	height: auto;
+	width: 28%;
+	border-radius: 10px;
+	box-shadow: 0.1px 4px 8px 2px rgba(0, 0, 0, 0.1);
+	background: rgba(255,255,255,0.8);
+}
+.main img{
+	height: 100px;
+	width: 100px;
+}
+.top_box{
+	height: 0px;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	border-radius: 10px;
+	background: #54a9ff;
+	justify-content: center;
+	box-shadow: 0.1px 4px 8px 2px rgba(0,0,0,0.1);
+}
+.top_box i{
+	font-size: 2em;
+	color: #fff;
+}
+.top_box h1{
+	user-select: none;
+	margin-left: 1em;
+	font-family: 'Secular One', sans-serif;
+	font-size: 1.5em;
+   letter-spacing: 3px;
+	color: #fff;
+}
+#find_btn{
+	padding: 10px;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	bottom: 20px;
+	border:  none;
+	outline: none;
+	font-weight: bold;
+	font-size: 1.1em;
+	border-radius: 10px;
+	letter-spacing: 2px;
+	box-shadow: 0.1px 4px 8px 2px rgba(0,0,0,0.1);
+	background: #a8d1fa;
+	transition: 300ms;
+	user-select: none;
+}
+#find_btn:hover{
+	cursor: pointer;
+	background: #7eb8f3;
+}
+.data_box{
+	height: 0px;
+	overflow: hidden;
+	width: 100%;
+	border-radius: 15px;
+	display: flex;
+	transition: 0.5s;
+	flex-direction: column;
+	background: #f4f7ff;
+}
+.data_box p{
+	margin: 15px;
+	font-weight: bold;
+	background: #f4f7ff;
+}
+a{
+	user-select: none;
+	display: flex;
+	position: fixed;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	bottom: 10px;
+	justify-content: flex-end;
+	align-items: flex-end;
+	font-size: 36px;
+	text-decoration: none;
+	z-index: 10;
+	color: #181818;
+	transition: 200ms ease;
+}
+::selection{
+	background: #a8d1fa;
+}
